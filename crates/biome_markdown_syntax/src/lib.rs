@@ -1,14 +1,12 @@
 #![deny(clippy::use_self)]
 
 pub mod emphasis_ext;
-pub mod file_source;
 #[macro_use]
 mod generated;
 mod block_ext;
 mod syntax_node;
 pub mod text_ext;
 
-pub use file_source::MdFileSource;
 pub use syntax_node::*;
 
 pub use self::generated::*;
